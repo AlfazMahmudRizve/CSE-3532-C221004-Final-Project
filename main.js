@@ -41,6 +41,7 @@ for(let i=0; i <= mainSeatIds.length-1; i++){
                 const inputFieldText = event.target.value;
                 
                 if(inputFieldText === 'NEW15' && inputFieldText.length === 5){
+                    let discountApplied = false;
                          button.removeAttribute('disabled');
                          button.addEventListener('click',function(){
                            let discountPrice = parseInt(total*(15/100));
@@ -55,6 +56,7 @@ for(let i=0; i <= mainSeatIds.length-1; i++){
                         });       
                 }
                else if(inputFieldText === 'COUPLE20' && inputFieldText.length === 8){
+                let discountApplied = false;
                    button.removeAttribute('disabled');
                    button.addEventListener('click',function(){
                      let discountPrice = parseInt(total*(20/100));
